@@ -1,0 +1,12 @@
+import os
+
+
+def create_fire_camp():
+    dir = "../fire_camp"
+    os.makedirs(dir, 0o755)
+    file = open("../fire_camp/fire_camp.py", "w+")
+    file.close()
+
+
+if __name__ == "__main__":
+    create_fire_camp()
